@@ -19,12 +19,12 @@
   "bugs": {
     "url": "https://github.com/Language-Research-Technology/icon-library/issues"
   },
-  "homepage": "https://language-research-technology.github.io/ldaca_icons/#/",
+  "homepage": "https://language-research-technology.github.io/icon-library/",
   "files": [
     "icons/"
   ],
   "dependencies": {
-    "ldaca_icons": "^1.0.1"
+    "ldaca_icons": "^1.0.3"
   },
   "devDependencies": {
     "np": "^8.0.4",
