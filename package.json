@@ -3,6 +3,7 @@
   "version": "1.0.2",
   "description": "Icon library for use in LDaCA projects",
   "main": "index.js",
+  "format": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "np": "np",
