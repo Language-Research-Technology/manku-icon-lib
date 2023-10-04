@@ -1,6 +1,6 @@
 {
   "name": "ldaca_icons",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Icon library for use in LDaCA projects",
   "main": "index.js",
   "type": "module",
