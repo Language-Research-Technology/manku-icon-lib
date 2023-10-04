@@ -1,17 +1,16 @@
-const ldaca_icons = require('ldaca_icons')
+const ldaca_icons = require('ldaca_icons/index.js')
 //import('ldaca_icons');
 //console.log(count(ldaca_icons));
-import * as icons from 'ldaca_icons';
+import { WrittenLanguage } from 'ldaca_icons';
+import * as icons from 'ldaca_icons/index.js';
 
 
 function load_icons() {
     console.log(icons);
     //var recordTemplate = $(".icon-template");
-    document.getElementById('icon-template').style.color = "red";
+    document.getElementById('icon-img').src = {WrittenLanguage};
 
-    for (icon in icons) {
-        console.log(icon);
-    }
+    
 }
 
 $(document).ready(function() {

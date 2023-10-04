@@ -24,7 +24,7 @@
     "icons/"
   ],
   "dependencies": {
-    "ldaca_icons": "^1.0.3"
+    "ldaca_icons": "^1.0.4"
   },
   "devDependencies": {
     "np": "^8.0.4",
