@@ -18,6 +18,10 @@ Icon library for use in LDaCA projects
 7. Create an Icon component with a `name` property that equals the icons filename and add properties `size` to control the size and `color` to control the color e.g. `<Icons name="Login" size="200" fill="blue"/>`. 
 
 ### Example
+Vue Project Implementation
+![Screenshot 2023-10-30 120054](https://github.com/Language-Research-Technology/manku-icons/assets/70498548/c3b0f0a9-fbc2-43f6-ad6b-9a7c91a8a300)
+Vue Code
+![image](https://github.com/Language-Research-Technology/manku-icons/assets/70498548/fc4c73bf-9dd4-4815-a195-4894e049503e)
 
 
 # Manipulating the icons within a Vue Project
