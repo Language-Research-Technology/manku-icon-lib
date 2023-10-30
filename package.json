@@ -1,30 +1,22 @@
 {
-  "name": "ldaca_icons",
+  "name": "manku_icons",
   "version": "1.0.4",
-  "description": "Icon library for use in LDaCA projects",
+  "description": "Icon library",
   "main": "index.js",
   "workspaces": [
     "packages/*"
   ],
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lerna:new-version": "lerna version patch --conventional-commits",
-    "lerna:publish": "lerna publish from-package",
-    "generate-svgs": "yarn run svgs:icon && yarn run prettier",
-    "prettier": "prettier --write 'components/**/*'",
-    "svgs:icon": "node build/build-icon.js",
-    "svgs:optimize": "node build/optimize-icon.js",
-    "prepublish": "yarn run build",
-    "release": "run-s build np"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "git+https://github.com/Language-Research-Technology/icon-library.git",
+  "repository": "https://github.com/Language-Research-Technology/manku-icons",
   "author": "Otis Carmichael",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Language-Research-Technology/icon-library/issues"
+    "url": "https://github.com/Language-Research-Technology/manku_icons/issues"
   },
-  "homepage": "https://language-research-technology.github.io/icon-library/",
+  "homepage": "https://github.com/Language-Research-Technology/manku-icons",
   "files": [
     "icons/"
   ],
