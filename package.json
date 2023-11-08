@@ -1,14 +1,25 @@
 {
-  "name": "manku_icons",
-  "version": "1.0.1",
+  "name": "manku-icon-lib",
+  "version": "1.0.2",
   "description": "Icon library",
-  "main": "index.js",
+  "type": "module",
+  "files": ["dist"],
+  "main": "./dist/manku-icon-lib.umd.cjs",
+  "module": "./dist/manku-icon-lib.js",
+  "exports": {
+    ".": {
+      "import": "./dist/manku-icon-lib.js",
+      "require": "./dist/manku-icon-lib.umd.cjs"
+    },
+    "./style.css": "./dist/style.css"
+  },
   "workspaces": [
     "packages/*"
   ],
-  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -20,11 +31,16 @@
     "url": "https://github.com/Language-Research-Technology/manku_icons/issues"
   },
   "homepage": "https://github.com/Language-Research-Technology/manku-icons",
-  "files": [
-    "packages/"
-  ],
   "engines": {
     "node": ">= 10"
+  },
+  "dependencies": {
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "vite": "^4.4.5",
+    "vite-svg-loader": "^4.0.0"
   },
   "private": false,
   "keywords": [
