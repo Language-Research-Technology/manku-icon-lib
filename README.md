@@ -4,7 +4,7 @@ Icon library for use in LDaCA projects
 # How to Use
 1. Ensure you have NPM installed
 2. Navigate to your project root
-3. Run `npm i manku_icons`
+3. Run `npm i manku-icon-lib`
 4. Use the icons as you would any svg, controlling the size using the width and height attributes and the color with the fill attribute. 
 
 # Using the Icon Library within a Vue Project
@@ -12,16 +12,15 @@ Icon library for use in LDaCA projects
 1. Navigate to the root of your Vue project
 2. Install the [vite svg loader](https://www.npmjs.com/package/vite-svg-loader) and follow the Setup process
 3. Within your vue project, navigate to your assets folder
-4. Install the icon library by running `npm i manku_icons` in the terminal. 
-5. Create an [Icon component](https://github.com/Language-Research-Technology/manku-icons/blob/main/Vue%20Example/components/Icons.vue) in the components folder. 
-6. Ensure that the import statement of Icon.vue (line 27) links to the folder containing the icons. 
-7. Create an Icon component with a `name` property that equals the icons filename and add properties `size` to control the size and `color` to control the color e.g. `<Icons name="Login" size="200" fill="blue"/>`. 
+4. Install the icon library by running `npm i manku-icon-lib` in the terminal. 
+5. Add an import statement at the top of your .vue file, `import { MankuIcon } from 'manku-icon-lib';`
+6. Create a MankuIcon component with a `name` property that equals the icons filename and add properties `size` to control the size and `color` to control the color e.g. `<MankuIcon name="Login" size="200" fill="blue"/>`. 
 
 ### Example
 Vue Project Implementation
-![Screenshot 2023-10-30 120054](https://github.com/Language-Research-Technology/manku-icons/assets/70498548/c3b0f0a9-fbc2-43f6-ad6b-9a7c91a8a300)
+![Use Example](https://github.com/Language-Research-Technology/manku-icons/assets/70498548/c3b0f0a9-fbc2-43f6-ad6b-9a7c91a8a300)
 Vue Code
-![image](https://github.com/Language-Research-Technology/manku-icons/assets/70498548/fc4c73bf-9dd4-4815-a195-4894e049503e)
+![Example Implementation](image.png)
 
 
 # Manipulating the icons within a Vue Project
@@ -31,7 +30,7 @@ Vue Code
 
 # Adding an icon to the package
 1. Clone the repository
-2. Add icon to the repository `packages\svgs\assets\icons\`
+2. Add icon to the repository `lib\assets\icons\`
 3. Request to merge the new icon into the repository
 
 # How to Update the Package
