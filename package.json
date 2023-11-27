@@ -1,6 +1,6 @@
 {
   "name": "manku-icon-lib",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Icon library",
   "type": "module",
   "files": ["dist"],
@@ -20,14 +20,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Language-Research-Technology/manku-icons.git"
+    "url": "https://github.com/Language-Research-Technology/manku-icon-lib"
   },
   "author": "Otis Carmichael",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Language-Research-Technology/manku_icons/issues"
+    "url": "https://github.com/Language-Research-Technology/manku-icon-lib/issues"
   },
-  "homepage": "https://github.com/Language-Research-Technology/manku-icons",
+  "homepage": "https://github.com/Language-Research-Technology/manku-icon-lib",
   "engines": {
     "node": ">= 10"
   },
