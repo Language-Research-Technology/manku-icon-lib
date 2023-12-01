@@ -38,3 +38,14 @@ Vue Code
 2. Increase the "version" in package.json
 3. Add changes to git, commit, pull and push to main
 4. Run `npm publish`
+
+
+## Example App
+
+To use the example app
+```
+npm run build
+cd example-app-using-manku
+npm install
+npm run dev
+```
