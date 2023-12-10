@@ -1,6 +1,6 @@
 {
   "name": "manku-icon-lib",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Icon library",
   "type": "module",
   "files": ["dist"],

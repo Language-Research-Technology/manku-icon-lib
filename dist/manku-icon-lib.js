@@ -1,8 +1,8 @@
-import { inject as c, ref as a, reactive as u, defineAsyncComponent as l, renderSlot as m, createTextVNode as p, toDisplayString as g, unref as i, openBlock as f, createBlock as d, resolveDynamicComponent as y } from "vue";
-const v = (r, t) => {
-  const e = r[t];
-  return e ? typeof e == "function" ? e() : Promise.resolve(e) : new Promise((n, s) => {
-    (typeof queueMicrotask == "function" ? queueMicrotask : setTimeout)(s.bind(null, new Error("Unknown variable dynamic import: " + t)));
+import { inject as c, ref as a, reactive as u, defineAsyncComponent as l, renderSlot as m, createTextVNode as p, toDisplayString as g, unref as i, openBlock as d, createBlock as f, resolveDynamicComponent as v } from "vue";
+const y = (s, t) => {
+  const e = s[t];
+  return e ? typeof e == "function" ? e() : Promise.resolve(e) : new Promise((n, r) => {
+    (typeof queueMicrotask == "function" ? queueMicrotask : setTimeout)(r.bind(null, new Error("Unknown variable dynamic import: " + t)));
   });
 }, b = {
   __name: "MankuIcon",
@@ -28,15 +28,15 @@ const v = (r, t) => {
       default: "#737373"
     }
   },
-  setup(r) {
+  setup(s) {
     const t = c("notFound", a("Icon not found")), e = u({
       noIcon: !1
-    }), n = r, s = l(
-      () => v(/* @__PURE__ */ Object.assign({ "../assets/icons/ConformsTo.svg": () => import("./ConformsTo-1911bd71.js"), "../assets/icons/Login+.svg": () => import("./Login_-de106ef9.js"), "../assets/icons/Login.svg": () => import("./Login-5fba9bbb.js"), "../assets/icons/Public.svg": () => import("./Public-c14cdd32.js"), "../assets/icons/SpokenLanguage.svg": () => import("./SpokenLanguage-85c1a282.js"), "../assets/icons/WrittenLanguage.svg": () => import("./WrittenLanguage-1b31e50e.js") }), `../assets/icons/${n.name}.svg`).then((o) => o, (o) => (console.error(o), e.noIcon = !0, {}))
+    }), n = s, r = l(
+      () => y(/* @__PURE__ */ Object.assign({ "../assets/icons/BinderLink.svg": () => import("./BinderLink-363c3a95.js"), "../assets/icons/ConformsTo.svg": () => import("./ConformsTo-1911bd71.js"), "../assets/icons/Login.svg": () => import("./Login-5fba9bbb.js"), "../assets/icons/LoginPlus.svg": () => import("./LoginPlus-aa585316.js"), "../assets/icons/Public.svg": () => import("./Public-c14cdd32.js"), "../assets/icons/SpokenLanguage.svg": () => import("./SpokenLanguage-85c1a282.js"), "../assets/icons/WrittenLanguage.svg": () => import("./WrittenLanguage-1b31e50e.js") }), `../assets/icons/${n.name}.svg`).then((o) => o, (o) => (console.error(o), e.noIcon = !0, {}))
     );
-    return (o, h) => e.noIcon ? m(o.$slots, "notFound", { key: 0 }, () => [
+    return (o, k) => e.noIcon ? m(o.$slots, "notFound", { key: 0 }, () => [
       p(g(i(t)), 1)
-    ]) : (f(), d(y(i(s)), {
+    ]) : (d(), f(v(i(r)), {
       key: 1,
       fill: n.color,
       width: n.size,
