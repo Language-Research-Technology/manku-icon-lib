@@ -1,10 +1,10 @@
-import { defineAsyncComponent as s, openBlock as r, createBlock as c, resolveDynamicComponent as a, unref as u } from "vue";
-const m = (n, e) => {
-  const t = n[e];
-  return t ? typeof t == "function" ? t() : Promise.resolve(t) : new Promise((o, i) => {
-    (typeof queueMicrotask == "function" ? queueMicrotask : setTimeout)(i.bind(null, new Error("Unknown variable dynamic import: " + e)));
+import { inject as c, ref as a, reactive as u, defineAsyncComponent as l, renderSlot as m, createTextVNode as p, toDisplayString as g, unref as i, openBlock as f, createBlock as d, resolveDynamicComponent as y } from "vue";
+const v = (r, t) => {
+  const e = r[t];
+  return e ? typeof e == "function" ? e() : Promise.resolve(e) : new Promise((n, s) => {
+    (typeof queueMicrotask == "function" ? queueMicrotask : setTimeout)(s.bind(null, new Error("Unknown variable dynamic import: " + t)));
   });
-}, l = {
+}, b = {
   __name: "MankuIcon",
   props: {
     name: {
@@ -28,17 +28,22 @@ const m = (n, e) => {
       default: "#737373"
     }
   },
-  setup(n) {
-    const e = n, t = s(
-      () => m(/* @__PURE__ */ Object.assign({ "../assets/icons/Login+.svg": () => import("./Login_-de106ef9.js"), "../assets/icons/Login.svg": () => import("./Login-9f291134.js"), "../assets/icons/Public.svg": () => import("./Public-ff480fac.js"), "../assets/icons/SpokenLanguage.svg": () => import("./SpokenLanguage-b3c227c7.js"), "../assets/icons/WrittenLanguage.svg": () => import("./WrittenLanguage-903452f8.js") }), `../assets/icons/${e.name}.svg`)
+  setup(r) {
+    const t = c("notFound", a("Icon not found")), e = u({
+      noIcon: !1
+    }), n = r, s = l(
+      () => v(/* @__PURE__ */ Object.assign({ "../assets/icons/ConformsTo.svg": () => import("./ConformsTo-1911bd71.js"), "../assets/icons/Login+.svg": () => import("./Login_-de106ef9.js"), "../assets/icons/Login.svg": () => import("./Login-5fba9bbb.js"), "../assets/icons/Public.svg": () => import("./Public-c14cdd32.js"), "../assets/icons/SpokenLanguage.svg": () => import("./SpokenLanguage-85c1a282.js"), "../assets/icons/WrittenLanguage.svg": () => import("./WrittenLanguage-1b31e50e.js") }), `../assets/icons/${n.name}.svg`).then((o) => o, (o) => (console.error(o), e.noIcon = !0, {}))
     );
-    return (o, i) => (r(), c(a(u(t)), {
-      fill: e.color,
-      width: e.size,
-      height: e.size
+    return (o, h) => e.noIcon ? m(o.$slots, "notFound", { key: 0 }, () => [
+      p(g(i(t)), 1)
+    ]) : (f(), d(y(i(s)), {
+      key: 1,
+      fill: n.color,
+      width: n.size,
+      height: n.size
     }, null, 8, ["fill", "width", "height"]));
   }
 };
 export {
-  l as MankuIcon
+  b as MankuIcon
 };
