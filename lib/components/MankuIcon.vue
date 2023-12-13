@@ -29,6 +29,7 @@ const props = defineProps({
   },
 })
 const icon = defineAsyncComponent(() => {
+      props.name.toLowerCase();
       return import(`../assets/icons/${props.name}.svg`).then((i) => {
         return i;
       }, (error) => {
