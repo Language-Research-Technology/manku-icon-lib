@@ -37,7 +37,8 @@ Vue Code
 1. Navigate to the root directory
 2. Increase the "version" in package.json
 3. Add changes to git, commit, pull and push to main
-4. Run `npm publish`
+4. Run `npm run build`
+5. Run `npm publish`
 
 
 ## Example App

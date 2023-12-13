@@ -32,7 +32,7 @@ const y = (s, t) => {
     const t = c("notFound", a("Icon not found")), e = u({
       noIcon: !1
     }), n = s, r = l(
-      () => y(/* @__PURE__ */ Object.assign({ "../assets/icons/BinderLink.svg": () => import("./BinderLink-363c3a95.js"), "../assets/icons/ConformsTo.svg": () => import("./ConformsTo-1911bd71.js"), "../assets/icons/Login.svg": () => import("./Login-5fba9bbb.js"), "../assets/icons/LoginPlus.svg": () => import("./LoginPlus-aa585316.js"), "../assets/icons/Public.svg": () => import("./Public-c14cdd32.js"), "../assets/icons/SpokenLanguage.svg": () => import("./SpokenLanguage-85c1a282.js"), "../assets/icons/WrittenLanguage.svg": () => import("./WrittenLanguage-1b31e50e.js") }), `../assets/icons/${n.name}.svg`).then((o) => o, (o) => (console.error(o), e.noIcon = !0, {}))
+      () => y(/* @__PURE__ */ Object.assign({ "../assets/icons/ConformsTo.svg": () => import("./ConformsTo-1911bd71.js"), "../assets/icons/Login.svg": () => import("./Login-5fba9bbb.js"), "../assets/icons/LoginPlus.svg": () => import("./LoginPlus-aa585316.js"), "../assets/icons/Public.svg": () => import("./Public-c14cdd32.js"), "../assets/icons/SpokenLanguage.svg": () => import("./SpokenLanguage-85c1a282.js"), "../assets/icons/WrittenLanguage.svg": () => import("./WrittenLanguage-1b31e50e.js"), "../assets/icons/binderLink.svg": () => import("./binderLink-363c3a95.js") }), `../assets/icons/${n.name}.svg`).then((o) => o, (o) => (console.error(o), e.noIcon = !0, {}))
     );
     return (o, k) => e.noIcon ? m(o.$slots, "notFound", { key: 0 }, () => [
       p(g(i(t)), 1)
