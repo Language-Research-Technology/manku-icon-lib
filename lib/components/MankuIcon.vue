@@ -32,7 +32,7 @@ const icon = defineAsyncComponent(() => {
       return import(`../assets/icons/${props.name}.svg`).then((i) => {
         return i;
       }, (error) => {
-        console.log(error);
+        //console.log(error);
         data.noIcon = true;
         return {};
       });

@@ -4,11 +4,11 @@ Icon library for use in LDaCA projects
 # List of Current Icon Names
 - public
 - login
-- loginPlus
-- writtenLanguage
-- spokenLanguage
-- conformsTo
-- binderLink
+- loginplus
+- writtenlanguage
+- spokenlanguage
+- conformsto
+- binderlink
 
 # How to Use
 1. Ensure you have NPM installed
