@@ -1,6 +1,15 @@
 # icon-library
 Icon library for use in LDaCA projects
 
+# List of Current Icon Names
+- public
+- login
+- loginPlus
+- writtenLanguage
+- spokenLanguage
+- conformsTo
+- binderLink
+
 # How to Use
 1. Ensure you have NPM installed
 2. Navigate to your project root

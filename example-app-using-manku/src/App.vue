@@ -4,17 +4,19 @@
 <template>
   <div>
     <h1>Manku Icons Example App</h1>
-    <manku-icon name="Public" size="40" fill=""/>
-    <manku-icon name="Login" size="40" fill="red"/>
-    <manku-icon name="Login+" size="40" fill="#123"/>
-    <manku-icon name="WrittenLanguage" size="40" fill="blue"/>
+    <manku-icon name="public" size="40" fill=""/>
+    <manku-icon name="login" size="40" fill=""/>
+    <manku-icon name="loginPlus" size="40" fill="#123"/>
+    <manku-icon name="writtenLanguage" size="40" fill="blue"/>
+    <manku-icon name="conformsTo" size="100" fill=""/>
+    <manku-icon name="binderLink" size="40" fill=""/>
   </div>
   <br/>
   <div style="text-align: left;white-space: break-spaces;">
     <h3>Example:</h3>
-    <manku-icon name="SpokenLanguage" size="40" fill="blue"/>
+    <manku-icon name="spokenLanguage" size="40" fill="blue"/>
     <code innerText="`
-    <manku-icon name='SpokenLanguage' size='40' fill='blue'/>
+    <manku-icon name='spokenLanguage' size='40' fill='blue'/>
   `"></code>
   </div>
   <br/>
