@@ -1,10 +1,10 @@
-import { inject as c, ref as a, reactive as u, defineAsyncComponent as l, renderSlot as p, createTextVNode as m, toDisplayString as g, unref as i, openBlock as d, createBlock as f, resolveDynamicComponent as v } from "vue";
-const y = (s, t) => {
-  const e = s[t];
-  return e ? typeof e == "function" ? e() : Promise.resolve(e) : new Promise((n, r) => {
-    (typeof queueMicrotask == "function" ? queueMicrotask : setTimeout)(r.bind(null, new Error("Unknown variable dynamic import: " + t)));
+import { inject as p, ref as m, reactive as g, defineAsyncComponent as d, renderSlot as f, createTextVNode as h, toDisplayString as y, unref as c, openBlock as a, createElementBlock as k, createBlock as l, resolveDynamicComponent as u } from "vue";
+const v = (s, n) => {
+  const t = s[n];
+  return t ? typeof t == "function" ? t() : Promise.resolve(t) : new Promise((e, o) => {
+    (typeof queueMicrotask == "function" ? queueMicrotask : setTimeout)(o.bind(null, new Error("Unknown variable dynamic import: " + n)));
   });
-}, b = {
+}, w = { key: 1 }, b = {
   __name: "MankuIcon",
   props: {
     name: {
@@ -12,8 +12,7 @@ const y = (s, t) => {
       required: !0
     },
     size: {
-      type: [String, Number],
-      default: 24
+      type: [String, Number]
     },
     width: {
       type: [String, Number],
@@ -29,19 +28,29 @@ const y = (s, t) => {
     }
   },
   setup(s) {
-    const t = c("notFound", a("Icon not found")), e = u({
+    const n = p("notFound", m("Icon not found")), t = g({
       noIcon: !1
-    }), n = s, r = l(
-      () => (n.name.toLowerCase(), y(/* @__PURE__ */ Object.assign({ "../assets/icons/binderlink.svg": () => import("./binderlink-363c3a95.js"), "../assets/icons/conformsto.svg": () => import("./conformsto-1911bd71.js"), "../assets/icons/login.svg": () => import("./login-5fba9bbb.js"), "../assets/icons/loginplus.svg": () => import("./loginplus-aa585316.js"), "../assets/icons/public.svg": () => import("./public-c14cdd32.js"), "../assets/icons/spokenlanguage.svg": () => import("./spokenlanguage-85c1a282.js"), "../assets/icons/writtenlanguage.svg": () => import("./writtenlanguage-1b31e50e.js") }), `../assets/icons/${n.name}.svg`).then((o) => o, (o) => (e.noIcon = !0, {})))
+    }), e = s, o = d(
+      () => {
+        const i = e.name.toLowerCase();
+        return v(/* @__PURE__ */ Object.assign({ "../assets/icons/binderlink.svg": () => import("./binderlink-8d3acc55.js"), "../assets/icons/conformsto.svg": () => import("./conformsto-1911bd71.js"), "../assets/icons/login.svg": () => import("./login-5fba9bbb.js"), "../assets/icons/loginplus.svg": () => import("./loginplus-aa585316.js"), "../assets/icons/public.svg": () => import("./public-c14cdd32.js"), "../assets/icons/spokenlanguage.svg": () => import("./spokenlanguage-85c1a282.js"), "../assets/icons/writtenlanguage.svg": () => import("./writtenlanguage-1b31e50e.js") }), `../assets/icons/${i}.svg`).then((r) => r, (r) => (t.noIcon = !0, {}));
+      }
     );
-    return (o, k) => e.noIcon ? p(o.$slots, "notFound", { key: 0 }, () => [
-      m(g(i(t)), 1)
-    ]) : (d(), f(v(i(r)), {
-      key: 1,
-      fill: n.color,
-      width: n.size,
-      height: n.size
-    }, null, 8, ["fill", "width", "height"]));
+    return (i, r) => t.noIcon ? f(i.$slots, "notFound", { key: 0 }, () => [
+      h(y(c(n)), 1)
+    ]) : (a(), k("span", w, [
+      e.size ? (a(), l(u(c(o)), {
+        key: 0,
+        fill: e.color,
+        width: e.size,
+        height: e.size
+      }, null, 8, ["fill", "width", "height"])) : (a(), l(u(c(o)), {
+        key: 1,
+        fill: e.color,
+        width: e.width,
+        height: e.height
+      }, null, 8, ["fill", "width", "height"]))
+    ]));
   }
 };
 export {

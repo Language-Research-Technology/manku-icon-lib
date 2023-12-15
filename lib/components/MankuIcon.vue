@@ -12,8 +12,7 @@ const props = defineProps({
     required: true
   },
   size: {
-    type: [String, Number],
-    default: 24,
+    type: [String, Number]
   },
   width: {
     type: [String, Number],
@@ -29,8 +28,8 @@ const props = defineProps({
   },
 })
 const icon = defineAsyncComponent(() => {
-      props.name.toLowerCase();
-      return import(`../assets/icons/${props.name}.svg`).then((i) => {
+      const name = props.name.toLowerCase();
+      return import(`../assets/icons/${name}.svg`).then((i) => {
         return i;
       }, (error) => {
         //console.log(error);
@@ -47,5 +46,9 @@ const icon = defineAsyncComponent(() => {
   <slot name="notFound" v-if="data.noIcon">
     {{ notFound }}
   </slot>
-  <component v-else :is="icon" :fill="props.color" :width="props.size" :height="props.size"/>
+  <span v-else>
+    <component v-if="props.size" :is="icon" :fill="props.color" :width="props.size" :height="props.size"/>
+    <component v-else :is="icon" :fill="props.color" :width="props.width" :height="props.height"/>
+  </span>
+
 </template>

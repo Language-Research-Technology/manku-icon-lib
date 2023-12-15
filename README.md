@@ -27,15 +27,15 @@ Icon library for use in LDaCA projects
 
 ### Example
 Vue Project Implementation
-![Use Example](https://github.com/Language-Research-Technology/manku-icons/assets/70498548/c3b0f0a9-fbc2-43f6-ad6b-9a7c91a8a300)
+![Use Example](image-1.png)
 Vue Code
-![Example Implementation](image.png)
+![Example Implementation](image-2.png)
 
 
 # Manipulating the icons within a Vue Project
 - The styling of the icons can be changed either in a css class that can be applied to the Vue component or the styling can be directly applied to the vue component. 
 - The color of an icon can be changed using `fill: ;` e.g. `fill: red;`
-- The size of an icon can be changed using `width: ;` and `height: ;` values, e.g. `width: 100px;`
+- By default an icons will fill it's container, the size of an icon can be changed by using `width: ;` and `height: ;` values, e.g. `width: 100px;`
 
 # Adding an icon to the package
 1. Clone the repository
