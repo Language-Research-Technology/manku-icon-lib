@@ -19,11 +19,11 @@ Icon library for use in LDaCA projects
 # Using the Icon Library within a Vue Project
 ## You can view a [Vue Example](https://github.com/Language-Research-Technology/manku-icons/tree/main/Vue%20Example) for an example of Vue project implementation.
 1. Navigate to the root of your Vue project
-2. Install the [vite svg loader](https://www.npmjs.com/package/vite-svg-loader) and follow the Setup process
+2. Install the [vite svg loader](https://www.npmjs.com/package/vite-svg-loader) `npm i vite-svg-loader` and follow the Setup process
 3. Within your vue project, navigate to your assets folder
 4. Install the icon library by running `npm i manku-icon-lib` in the terminal. 
 5. Add an import statement at the top of your .vue file, `import { MankuIcon } from 'manku-icon-lib';`
-6. Create a MankuIcon component with a `name` property that equals the icons filename and add properties `size` to control the size and `color` to control the color e.g. `<MankuIcon name="Login" size="200" fill="blue"/>`. 
+6. Create a MankuIcon component with a `name` property that equals the icons filename and add properties `size` to control the size and `color` to control the color e.g. `<MankuIcon name="Login" size="200" color="blue"/>`. 
 
 ### Example
 Vue Project Implementation
@@ -34,7 +34,7 @@ Vue Code
 
 # Manipulating the icons within a Vue Project
 - The styling of the icons can be changed either in a css class that can be applied to the Vue component or the styling can be directly applied to the vue component. 
-- The color of an icon can be changed using `fill: ;` e.g. `fill: red;`
+- The color of an icon can be changed using `color: ;` e.g. `color: red;`
 - By default an icons will fill it's container, the size of an icon can be changed by using `width: ;` and `height: ;` values, e.g. `width: 100px;`
 
 # Adding an icon to the package
