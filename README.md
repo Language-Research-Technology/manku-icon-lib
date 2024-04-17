@@ -7,6 +7,7 @@ Icon library for use in LDaCA projects
 - loginplus
 - writtenlanguage
 - spokenlanguage
+- signedlanguage
 - conformsto
 - binderlink
 

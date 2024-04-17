@@ -8,10 +8,12 @@
     <manku-icon name="login" size="100" color=""/>
     <manku-icon name="loginPlus" size="100" color=""/>
     <manku-icon name="writtenlanguage" size="100" color=""/>
-    <manku-icon name="spokenlanguage" size="100" color=""/><br>
+    <manku-icon name="signedlanguage" size="100" color=""/>
+    <manku-icon name="spokenlanguage" size="100" color=""/>
     <manku-icon name="conformsto" height="80" color=""/>
     <manku-icon name="binderlink" height="80" color=""/>
   </div>
+  
   <br/>
   <div style="text-align: left;white-space: break-spaces;">
     <h3>Example:</h3>
