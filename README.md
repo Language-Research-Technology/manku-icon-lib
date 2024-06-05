@@ -1,5 +1,5 @@
 # icon-library
-Icon library for use in LDaCA projects
+Icon library for use in LDaCA projects. Can be viewed [here](https://www.npmjs.com/package/manku-icon-lib).
 
 # List of Current Icon Names
 - public
