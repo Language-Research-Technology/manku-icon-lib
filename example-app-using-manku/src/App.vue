@@ -12,6 +12,7 @@
     <manku-icon name="spokenlanguage" size="100" color=""/>
     <manku-icon name="conformsto" height="80" color=""/>
     <manku-icon name="binderlink" height="80" color=""/>
+    <manku-icon name="binderlinkblue" height="80" color=""/>
   </div>
   
   <br/>
